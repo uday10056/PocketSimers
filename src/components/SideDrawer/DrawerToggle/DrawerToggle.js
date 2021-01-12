@@ -27,9 +27,7 @@ const DrawerToggle = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.DrawerToggle} onClick={props.clicked}>
-            <IconLayout bgColor="white">
-                <MoreVertIcon></MoreVertIcon>
-            </IconLayout>
+            <MoreVertIcon></MoreVertIcon>
         </div>
     )
 

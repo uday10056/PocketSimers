@@ -46,7 +46,10 @@ export default function AppBarFunction(props) {
 
                     <AppBar color="transparent" elevation={0} position="static" >
                         <Toolbar>
-                            <Logo></Logo>
+                            <Grid item>
+                                <Logo></Logo>
+                            </Grid>
+
                             {(Desktop || Tablet) && <ListItems ></ListItems>}
                             {Mobile && <Grid className={classes.root} container direction="row" justify="flex-end">
                                 <Grid item>

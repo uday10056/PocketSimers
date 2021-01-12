@@ -5,8 +5,18 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 const useStyles = makeStyles((theme) => ({
     formControl: {
-        margin: theme.spacing(1),
-        minWidth: 120
+
+        [theme.breakpoints.down("sm")]: {
+            maxWidth: 100,
+            width: 80,
+        },
+        [theme.breakpoints.up("md")]: {
+            maxWidth: 120,
+            width: 100,
+        },
+        [theme.breakpoints.up("lg")]: {
+            minWidth: 120,
+        },
     },
     selectEmpty: {
     },
@@ -30,7 +40,7 @@ export default function () {
                 className={classes.selectEmpty}
             >
                 <MenuItem value="">
-                    All Items
+                    All
                 </MenuItem>
                 <MenuItem value={10}>GTS 2</MenuItem>
                 <MenuItem value={20}>BusID</MenuItem>
