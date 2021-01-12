@@ -5,45 +5,51 @@ const dummyData = [
         items: [
             {
                 id: "fDObf2AeAP4",
-                image: "https://img.youtube.com/vi/fDObf2AeAP4/maxresdefault.jpg",
+                image: "https://cdn.discordapp.com/attachments/418467296395132928/798557798760841257/0001-15300568331_20210108_192827_0000.png",
                 title: "GTS 2 Monster Skin",
-                views: "1.9M views",
-                publishedBy: "Indian Driver"
+                downloads: "1.9",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "3AzIgAa0Cm8",
                 image: "https://img.youtube.com/vi/3AzIgAa0Cm8/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "128K views",
-                publishedBy: "Indian Driver"
+                downloads: "14",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "92B37aXykYw",
                 image: "https://img.youtube.com/vi/92B37aXykYw/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "2.47 million views",
-                publishedBy: "Indian Driver"
+                downloads: "1.5",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "J6rVaFzOEP8",
                 image: "https://img.youtube.com/vi/J6rVaFzOEP8/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "104K views",
-                publishedBy: "Indian Driver"
+                downloads: "1.4",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "Wbk8ZrfU3EM",
                 image: "https://img.youtube.com/vi/Wbk8ZrfU3EM/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "600k views",
-                publishedBy: "Indian Driver"
+                downloads: "3.9",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "ikHpFgKJax8",
                 image: "https://img.youtube.com/vi/ikHpFgKJax8/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "2.3 million views",
-                publishedBy: "Indian Driver"
+                downloads: "1.9",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             }
         ]
     },
@@ -55,22 +61,25 @@ const dummyData = [
                 id: "tRLDPy1A8pI",
                 image: "https://img.youtube.com/vi/tRLDPy1A8pI/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "876k views",
-                publishedBy: "Indian Driver"
+                downloads: "1.9",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "2ulH1R9hlG8",
                 image: "https://img.youtube.com/vi/2ulH1R9hlG8/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "873 views",
-                publishedBy: "Indian Driver"
+                downloads: "4.9",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             },
             {
                 id: "\_TkfQ9MaIgU",
                 image: "https://img.youtube.com/vi/_TkfQ9MaIgU/maxresdefault.jpg",
                 title: "GTS 2 Monster Skin",
-                views: "283 views",
-                publishedBy: "Indian Driver"
+                downloads: "2.9",
+                publishedBy: "Indian Driver",
+                ago: "1 month"
             }
         ]
     }
