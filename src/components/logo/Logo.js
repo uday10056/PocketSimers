@@ -6,6 +6,12 @@ const useStyles = makeStyles((theme) => ({
     Logo: {
         padding: 8,
         height: '100%',
+        display: 'flex',
+        flexFlow: 'column',
+        justifyContent: 'space - around',
+        alignItems: 'center',
+        padding: '10px 0',
+        boxSizing: 'border-box',
     },
     Image: {
         height: '100%',

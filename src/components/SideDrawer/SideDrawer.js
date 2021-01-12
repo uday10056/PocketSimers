@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     Button: {
         display: 'block',
         marginBottom: 20,
+        width: '100%',
     },
 
 

@@ -13,13 +13,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontSize: "inherit",
     [theme.breakpoints.down("sm")]: {
-      width: '80%'
+      width: '90%'
     },
     [theme.breakpoints.up("md")]: {
-      width: '80%'
+      width: '70%'
     },
     [theme.breakpoints.up("lg")]: {
-      width: '80%'
+      width: '60%'
     },
 
   },
