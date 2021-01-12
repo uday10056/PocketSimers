@@ -6,6 +6,7 @@ import IconLayout from '../../../Icon/IconLayout';
 
 const useStyles = makeStyles((theme) => ({
     DrawerToggle: {
+        color: '#FFF',
         width: '40px',
         height: '100',
         display: 'flex',
@@ -26,9 +27,11 @@ const useStyles = makeStyles((theme) => ({
 const DrawerToggle = (props) => {
     const classes = useStyles();
     return (
-        <div className={classes.DrawerToggle} onClick={props.clicked}>
-            <MoreVertIcon></MoreVertIcon>
-        </div>
+
+        <IconButton color="inherit" className={classes.DrawerToggle} onClick={props.clicked}>
+            <MoreVertIcon color="inherit"   ></MoreVertIcon>
+        </IconButton>
+
     )
 
 };
