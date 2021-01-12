@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import AppBar from '../../components/appbar/AppBar'
 import SkeletonCard from '../../components/skeletoncard/SkeletonCard';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
+import FetchData from "../../components/fetchdata/FetchData";
 
 
 class Counter extends Component {
@@ -28,7 +29,8 @@ class Counter extends Component {
                 <SideDrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler} />
-                <SkeletonCard></SkeletonCard>
+                <FetchData></FetchData>
+                {/* <SkeletonCard></SkeletonCard> */}
                 {/* <CounterOutput counter={this.props.ctr}></CounterOutput>
                 <CounterControl name="Addition" clickHandler={this.props.updateMethod.bind(this, "Addition")}></CounterControl>
                 <CounterControl name="Subtract" clickHandler={this.props.updateMethod.bind(this, "Subtraction")}></CounterControl> */}

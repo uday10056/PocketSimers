@@ -13,7 +13,7 @@ const theme = responsiveFontSizes(createMuiTheme({
         },
     },
     typography: {
-        fontFamily: "Montserrat"
+        fontFamily: "Poppins"
     }
 }));
 export default theme;
