@@ -9,6 +9,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import PlayForWorkIcon from '@material-ui/icons/PlayForWork';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,9 +30,14 @@ const useStyles = makeStyles((theme) => ({
     darkTitle: {
         fontSize: "medium",
         color: "#000",
+        fontWeight: 500
     },
     transparentBg: {
         backgroundColor: "transparent"
+    },
+    onLeft: {
+        padding: 0,
+        paddingTop: 5
     }
 })
 );
@@ -51,12 +57,12 @@ export default function ImgMediaCard(props) {
                     title="Contemplative Reptile"
 
                 />
-                <CardContent justify="flex-start">
+                <CardContent justify="flex-start" classes={{ root: classes.onLeft }}>
                     <Typography className={classes.minimumPadding} classes={{ root: classes.darkTitle }} align="left" variant="body2" color="textSecondary" >
                         {props.title}
                     </Typography>
                     <Typography className={classes.minimumPadding} align="left" variant="body2" color="textSecondary">
-                        {props.publishedBy}
+                        {props.publishedBy} <IconButton disabled edge="start" fontSize=" small"><CheckCircleIcon fontSize="small" style={{ fontSize: 12, color: "#707070" }}></CheckCircleIcon></IconButton>
                     </Typography>
                     <Typography className={classes.minimumPadding} align="left" variant="body2" color="textSecondary" >
                         {props.downloads}k downloads | {props.ago} ago

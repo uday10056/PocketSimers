@@ -6,7 +6,7 @@ const dummyData = [
             {
                 id: "fDObf2AeAP4",
                 image: "https://cdn.discordapp.com/attachments/418467296395132928/798557798760841257/0001-15300568331_20210108_192827_0000.png",
-                title: "GTS 2 Monster Skin",
+                title: "Grand Truck Simulator 2 Monster Skin also compatible with World Truck Driving Simulator",
                 downloads: "1.9",
                 publishedBy: "Indian Driver",
                 ago: "1 month"
