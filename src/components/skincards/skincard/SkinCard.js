@@ -48,7 +48,7 @@ export default function ImgMediaCard(props) {
     return (
         <Card elevation={0} classes={{ root: classes.transparentBg }} className={classes.root}>
 
-            <CardActionArea >
+            <CardActionArea onClick={props.handleClickOpen}>
                 <CardMedia
                     component="img"
                     alt="Contemplative Reptile"

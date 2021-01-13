@@ -6,11 +6,13 @@ import AppBar from '../../components/appbar/AppBar'
 import SkeletonCard from '../../components/skeletoncard/SkeletonCard';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import FetchData from "../../components/fetchdata/FetchData";
+import Modal from '../../components/modal/Modal'
 
 
 class Counter extends Component {
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        showModal: false,
     }
 
     sideDrawerClosedHandler = () => {
@@ -22,6 +24,15 @@ class Counter extends Component {
             return { showSideDrawer: !prevState.showSideDrawer };
         });
     }
+    handleClickOpen = () => {
+        console.log("Hmmmmm");
+        this.setState({ showModal: true })
+        console.log("New State", this.state.showModal);
+    };
+
+    handleClose = () => {
+        this.setState({ showModal: false })
+    };
     render() {
         return (
             <>
@@ -29,7 +40,8 @@ class Counter extends Component {
                 <SideDrawer
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler} />
-                <FetchData></FetchData>
+                <Modal handleClose={this.handleClose} modalStatus={this.state.showModal}></Modal>
+                <FetchData handleClickOpen={this.handleClickOpen}></FetchData>
                 {/* <SkeletonCard></SkeletonCard> */}
                 {/* <CounterOutput counter={this.props.ctr}></CounterOutput>
                 <CounterControl name="Addition" clickHandler={this.props.updateMethod.bind(this, "Addition")}></CounterControl>

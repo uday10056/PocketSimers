@@ -3,7 +3,7 @@ import dummyData from "../../dummydata/DummyData";
 import SkinCards from "../skincards/SkinCards";
 import SkeletonCard from '../skeletoncard/SkeletonCard';
 
-const FetchData = () => {
+const FetchData = (props) => {
     const [videos, setVideos] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -28,7 +28,7 @@ const FetchData = () => {
 
                         <section key={index}>
                             <h2 className="section-title">{list.section}</h2>
-                            <SkinCards list={list} ></SkinCards>
+                            <SkinCards handleClickOpen={props.handleClickOpen} list={list} ></SkinCards>
                             <hr />
                         </section>
 
